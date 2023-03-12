@@ -56,4 +56,9 @@ if (special) {
   possibleCharacters = possibleCharacters.concat(specialCharacters)
 }
 
-
+var password;
+for (let i = 0; i < numberOfCharacters; i++) {
+  var possibleResults = [Math.floor(Math.random() * possibleCharacters.length)];
+  password = password + possibleCharacters[possibleResults]
+return password; 
+}
