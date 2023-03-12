@@ -39,5 +39,21 @@ includeNumbers = confirm('Do you want to include numbers?')
 if (!includeNumbers) alert = 'Your password will NOT include numbers.'; {
 }
 
+if (includeNumbers === false && lowercase === false && uppercase === false && special === false) {
+  alert("You must choose at lease one.")
+}
+
+if (includeNumbers) {
+  possibleCharacters = possibleCharacters.concat(numbers)
+}
+if (lowercase) {
+  possibleCharacters = possibleCharacters.concat(lowercaseLetters)
+}
+if (uppercase) {
+  possibleCharacters = possibleCharacters.concat(uppercaseLetters)
+}
+if (special) {
+  possibleCharacters = possibleCharacters.concat(specialCharacters)
+}
 
 
