@@ -18,12 +18,26 @@ function generatePassword() {
 }
 numberOfCharacters = prompt("How many characters do you want in your password? Please choose a number between 8 and 128.");
 if (numberOfCharacters < 8 || numberOfCharacters > 128) {
-  return "Please choose a number between 8 and 128."
+  alert ("Please choose a number between 8 and 128.")
 } else {
   alert("Your password will be " + numberOfCharacters + " characters long.");
 }
+
 lowercase = confirm('Do you want lowercase letters?');
-   if(true) text = "Your password will include lowercase letters"; {
-    };
+if (!lowercase) alert("Your password will NOT include lowercase letters."); {
+} 
+
+uppercase = confirm('Do you want uppercase letters?');
+if (!uppercase) alert = 'Your password will NOT include uppercase letters.'; {
+}
+
+special = confirm('Do you want to include special characters?');
+if (!special) alert = 'Your password will NOT include special characters.'; {
+}
+
+includeNumbers = confirm('Do you want to include numbers?')
+if (!includeNumbers) alert = 'Your password will NOT include numbers.'; {
+}
+
 
 
