@@ -1,16 +1,11 @@
-// Assignment Code
 
-
-// //   passwordText.value = password;
-
-// }
 function generatePassword() {
   var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var lowercaseLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var uppercaseLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   var specialCharacters = ['!', '`', '~', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '[', '{', ']', '}', ';', ':', '"', ',', '<', '.', '>', '/', '?', '|'];
   var possibleCharacters = [];
-}
+
 numberOfCharacters = prompt("How many characters do you want in your password? Please choose a number between 8 and 128.");
 if (numberOfCharacters < 8 || numberOfCharacters > 128) {
   alert("Please choose a number between 8 and 128.")
@@ -38,16 +33,16 @@ if (includeNumbers === false && lowercase === false && uppercase === false && sp
   alert("You must choose at lease one.")
 }
 
-if (includeNumbers) {
+if (includeNumbers === true) {
   possibleCharacters = possibleCharacters.concat(numbers)
 }
-if (lowercase) {
-  possibleCharacters = possibleCharacters.concat(lowercaseLetters)
+if (lowercase === true) {
+  possibleCharacters= possibleCharacters.concat(lowercaseLetters)
 }
-if (uppercase) {
+if (uppercase === true) {
   possibleCharacters = possibleCharacters.concat(uppercaseLetters)
 }
-if (special) {
+if (special === true) {
   possibleCharacters = possibleCharacters.concat(specialCharacters)
 }
 
@@ -55,6 +50,7 @@ var password;
 for (let i = 0; i < numberOfCharacters; i++) {
   var possibleResults = [Math.floor(Math.random() * possibleCharacters.length)];
   password = password + possibleCharacters[possibleResults]
+}
   return password;
 }
 
