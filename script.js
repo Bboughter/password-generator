@@ -1,20 +1,23 @@
-
+//declared variables globally
 var numbers = '0123456789'
 var lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz'
 var uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 var specialCharacters = '!`~@#$%^&*()-_=+[{]};:",<./ ? |';
 var possibleCharacters = [];
 var finalPassword = [];
-
+//function to generate the new password
 function generatePassword() {
 
-
+//prompt for the user to enter how many characters they want in their password. 
+//alert added if the user doesn't choose a number meeting the criteria
+//starts the function over again if criteria not met
   numberOfCharacters = prompt("How many characters do you want in your password? Please choose a number between 8 and 128.");
   if (numberOfCharacters < 8 || numberOfCharacters > 128) {
     alert("Please choose a number between 8 and 128.");
     generatePassword();
   }
-
+//asking the user if they want to include lowercase letters, uppercase letters, numbers, and special characters.
+//user alerted if they didn't want to include one of the variables 
   let lowercase = confirm('Do you want lowercase letters?');
   if (!lowercase) alert("Your password will NOT include lowercase letters."); {
   }
