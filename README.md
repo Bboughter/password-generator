@@ -19,7 +19,7 @@ There are no installation steps required. The website to randomize your password
 
 When on the above webpage, click the "generate password" button to start the creating process. A box will appear prompting you to enter the amount of characters you want in your password. The amount of characters must be between 8 and 128. There will next be a prompt asking you if you would like to include lowercase letters, uppercase letters, special characters, or numbers. If you click cancel on either of the character types, you will be prompted with a box that will tell you that character will not be included. At least one of the character types must be selected. If it does not meet this criteria, no password will be generated and you will be asked to try again. Once all prompts have been answered correctly, your new password will be randomly generate inside the dashed box. 
 
-If you would like to see a demo of the generator, please visit https://watch.screencastify.com/v/xTHo5fTfCfNWQf2gf6B0.
+If you would like to see a demo of the generator, please visit https://watch.screencastify.com/v/LpmOZPKbzTAAOvP8Vgc6.
 
 ![Screenshot 2023-03-13 234629](https://user-images.githubusercontent.com/113574704/224921805-f93c2ba9-0aa0-47ed-9db9-d82dccac8ebd.png)
 ![Screenshot 2023-03-13 234654](https://user-images.githubusercontent.com/113574704/224921825-bc6621ea-8daa-40fc-abd7-e97caf59a8ee.png)
