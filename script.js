@@ -33,17 +33,18 @@ function generatePassword() {
   let includeNumbers = confirm('Do you want to include numbers?')
   if (!includeNumbers) alert('Your password will NOT include numbers.'); {
   }
-
+//alerts the user if they didn't choose lowercase letters, uppercase letters, numbers or special characters that they need to choose at least one
+//function started over if criteria not met
   if (includeNumbers === false && lowercase === false && uppercase === false && special === false) {
     alert("You must choose at lease one.")
     generatePassword()
   }
-
+//if the user chose to include numbers, lowercase letters, uppercase letters, or special characters, options were taken from the original 
+//variable and added to a new variable in an array
   if (includeNumbers) {
-
     possibleCharacters.push(...numbers);
   }
-  console.log(possibleCharacters, "possible characters line 39");
+  
   if (lowercase) {
     possibleCharacters.push(...lowercaseLetters)
 
@@ -57,18 +58,23 @@ function generatePassword() {
 
   }
 
-
+//for loop for to run through the possible characters with a math equation to randomize the final output
   for (let i = 0; i < numberOfCharacters; i++) {
     finalPassword.push(possibleCharacters[Math.floor(Math.random() * possibleCharacters.length)])
 
   }
   return finalPassword;
 }
-
+/**code provided initially */
+//the code grabs the generate id element from the HTML and is assigned to the generateBtn variable
+//the code also grabs the password id element from the HTML during the writePassword function which assigns the password to a new variable so it will 
+//display the text of the new password
+//the join method is used to combine the strings so the commas do not appear between each character
 var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password.join('');
 }
+//the event listener is listening for the user to click on the generate password button the began
 generateBtn.addEventListener("click", writePassword)
