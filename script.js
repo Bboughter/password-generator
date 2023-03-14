@@ -1,8 +1,8 @@
 //declared variables globally
-var numbers = '0123456789'
-var lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz'
-var uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-var specialCharacters = '!`~@#$%^&*()-_=+[{]};:",<./ ? |';
+var numbers = '0123456789';
+var lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
+var uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var specialCharacters = '!`~@#$%^&*()-=+[{]};:",<./?|';
 var possibleCharacters = [];
 var finalPassword = [];
 //function to generate the new password
